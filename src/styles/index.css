@@ -6,7 +6,8 @@
   --color-grey-500: #5d5d5d;
 
   --shadow-sm: 0 0.1rem 0.2rem rgba(190, 190, 190, 0.9);
-  --shadow-md: 0 0.2rem 0.4rem rgba(190, 190, 190, 0.7);
+  --shadow-md: 0.4rem 0.4rem 0.4rem rgba(190, 190, 190, 0.7);
+  --shadow-in: inset 0.2rem 0.4rem 0.6rem rgba(190, 190, 190, 0.7);
 
   --border-radius-sm: 0.3rem;
   --border-radius-md: 0.6rem;
@@ -21,6 +22,8 @@
   --font-size-sm: 0.9rem;
   --font-size-md: 1.2rem;
   --font-size-lg: 1.6rem;
+
+  --stickTop: 50vh;
 }
 
 * {
@@ -45,6 +48,7 @@ html {
   font-family: var(--font-family-mon);
   font-size: calc(100vw / 1920 * 20);
   scroll-behavior: smooth;
+  background-color: var(--color-main-300);
 }
 
 input,

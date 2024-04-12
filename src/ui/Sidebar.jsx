@@ -4,6 +4,8 @@ import UserAvatar from '../authentication/UserAvatar';
 import MainNav from './MainNav';
 
 const StyledSidebar = styled.aside`
+  position: relative;
+  z-index: 3;
   background-color: var(--color-main-500);
   padding: 3.2rem 0.5rem;
   grid-row: 1/-1;

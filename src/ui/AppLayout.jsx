@@ -1,4 +1,4 @@
-// import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from './Header';
@@ -11,11 +11,12 @@ const StyledAppLayout = styled.div`
   height: 100vh;
 `;
 
-// const Main = styled.main`
-//   background-color: var(--color-grey-50);
-//   padding: 4rem 4.8rem 6.4rem;
-//   overflow-y: auto;
-// `;
+//70.5 rem inside
+const Main = styled.main`
+  box-shadow: var(--shadow-in);
+  padding: 4rem 4.8rem 0;
+  overflow-y: auto;
+`;
 
 // const Container = styled.div`
 //   max-width: 120rem;
@@ -30,11 +31,9 @@ function AppLayout() {
     <StyledAppLayout>
       <Header />
       <Sidebar />
-      {/* <Main>
-        <Container>
-          <Outlet />
-        </Container>
-      </Main> */}
+      <Main>
+        <Outlet />
+      </Main>
     </StyledAppLayout>
   );
 }
